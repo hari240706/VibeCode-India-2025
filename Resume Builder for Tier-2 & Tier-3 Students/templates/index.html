@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form action="/generate" method="post">
+
+            <label>Full Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone:</label>
+            <input type="tel" name="phone" required>
+
+            <label>LinkedIn:</label>
+            <input type="url" name="linkedin">
+
+            <label>GitHub:</label>
+            <input type="url" name="github">
+
+            <label>Profile Summary:</label>
+            <textarea name="summary" rows="3"></textarea>
+
+            <label>Skills (comma-separated):</label>
+            <input type="text" name="skills">
+
+            <label>Languages:</label>
+            <input type="text" name="languages">
+
+            <label>Certifications:</label>
+            <textarea name="certifications" rows="2"></textarea>
+
+            <label>Achievements:</label>
+            <textarea name="achievements" rows="2"></textarea>
+
+            <label>Education:</label>
+            <textarea name="education" rows="3"></textarea>
+
+            <label>Experience:</label>
+            <textarea name="experience" rows="3"></textarea>
+
+            <button type="submit">Generate PDF</button>
+        </form>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

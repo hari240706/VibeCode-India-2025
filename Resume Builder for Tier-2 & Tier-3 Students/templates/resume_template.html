@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <style>
+        body { font-family: Arial; margin: 30px; }
+        h1, h2 { color: #2c3e50; }
+        p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>{{ data['name'] }}</h1>
+    <p><strong>Email:</strong> {{ data['email'] }}</p>
+    <p><strong>Phone:</strong> {{ data['phone'] }}</p>
+    <p><strong>LinkedIn:</strong> {{ data['linkedin'] }}</p>
+    <p><strong>GitHub:</strong> {{ data['github'] }}</p>
+
+    <h2>Profile Summary</h2>
+    <p>{{ data['summary'] }}</p>
+
+    <h2>Skills</h2>
+    <p>{{ data['skills'] }}</p>
+
+    <h2>Languages</h2>
+    <p>{{ data['languages'] }}</p>
+
+    <h2>Certifications</h2>
+    <p>{{ data['certifications'] }}</p>
+
+    <h2>Achievements</h2>
+    <p>{{ data['achievements'] }}</p>
+
+    <h2>Education</h2>
+    <p>{{ data['education'] }}</p>
+
+    <h2>Experience</h2>
+    <p>{{ data['experience'] }}</p>
+</body>
+</html>
